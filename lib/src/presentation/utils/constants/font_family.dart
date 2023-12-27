@@ -183,8 +183,7 @@ class AppFonts {
         return GoogleFonts.greatVibesTextTheme();
       case FontType.zillaSlab:
         return GoogleFonts.zillaSlabTextTheme();
-      case FontType.sourceSansPro:
-        return GoogleFonts.sourceSansProTextTheme();
+
       case FontType.raleway:
         return GoogleFonts.ralewayTextTheme();
       case FontType.ptSans:
@@ -215,9 +214,6 @@ class AppFonts {
 
       case FontType.cormorant:
         return GoogleFonts.cormorantTextTheme();
-
-      case FontType.sourceSerifPro:
-        return GoogleFonts.sourceSerifProTextTheme();
 
       case FontType.kurale:
         return GoogleFonts.kuraleTextTheme();

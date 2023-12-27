@@ -1,10 +1,10 @@
 name: vs_story_designer
 description: This is a package created in the style of the instagram story creator, with which you can create images with images, texts, finger drawing.
-version: 1.5.2
-homepage:  https://github.com/VickySalunkhe/vs_story_designer
+version: 1.5.3
+homepage: https://github.com/VickySalunkhe/vs_story_designer
 
 environment:
-  sdk: '>=2.18.2 <3.0.0'
+  sdk: ">=3.1.5 <4.0.0"
 
 dependencies:
   flutter:
@@ -16,10 +16,14 @@ dependencies:
   image: ^4.0.12
   path_provider: ^2.0.12
   photo_view: ^0.14.0
-  google_fonts: ^4.0.3
-  image_gallery_saver: ^1.7.1
-  
-  vs_media_picker: ^0.0.3
+  google_fonts: ^6.1.0
+  image_gallery_saver: ^2.0.3
+
+  vs_media_picker:
+    git:
+      url: https://github.com/cakkiraz/vs_media_picker.git
+      ref: v1.0.0
+
   # gallery_media_picker: 0.0.82
 
   # modal_gif_picker: ^0.0.2
@@ -37,12 +41,10 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.1
+  flutter_lints: ^3.0.1
   # dotted_border: ^2.0.0+3
 
-
 flutter:
-
   assets:
     - packages/vs_story_designer/assets/icons/align_center.png
     - packages/vs_story_designer/assets/icons/align_left.png
@@ -70,78 +72,78 @@ flutter:
 
   # fonts:
 
-    # - family: Alegreya
-    #   fonts:
-    #     - asset: packages/vs_story_designer/assets/fonts/Alegreya-VariableFont_wght.ttf
+  # - family: Alegreya
+  #   fonts:
+  #     - asset: packages/vs_story_designer/assets/fonts/Alegreya-VariableFont_wght.ttf
 
-    # - family: B612
-    #   fonts:
-    #     - asset: packages/vs_story_designer/assets/fonts/B612-Regular.ttf
+  # - family: B612
+  #   fonts:
+  #     - asset: packages/vs_story_designer/assets/fonts/B612-Regular.ttf
 
-    # - family: TitilliumWeb
-    #   fonts:
-    #     - asset: packages/vs_story_designer/assets/fonts/TitilliumWeb-Regular.ttf
+  # - family: TitilliumWeb
+  #   fonts:
+  #     - asset: packages/vs_story_designer/assets/fonts/TitilliumWeb-Regular.ttf
 
-    # - family: Varela
-    #   fonts:
-    #     - asset: packages/vs_story_designer/assets/fonts/Varela-Regular.ttf
+  # - family: Varela
+  #   fonts:
+  #     - asset: packages/vs_story_designer/assets/fonts/Varela-Regular.ttf
 
-    # - family: Vollkorn
-    #   fonts:
-    #     - asset: packages/vs_story_designer/assets/fonts/Vollkorn-Regular.ttf
+  # - family: Vollkorn
+  #   fonts:
+  #     - asset: packages/vs_story_designer/assets/fonts/Vollkorn-Regular.ttf
 
-    # - family: Rakkas
-    #   fonts:
-    #     - asset: packages/vs_story_designer/assets/fonts/Rakkas-Regular.ttf
+  # - family: Rakkas
+  #   fonts:
+  #     - asset: packages/vs_story_designer/assets/fonts/Rakkas-Regular.ttf
 
-    # - family: ConcertOne
-    #   fonts:
-    #     - asset: packages/vs_story_designer/assets/fonts/ConcertOne-Regular.ttf
+  # - family: ConcertOne
+  #   fonts:
+  #     - asset: packages/vs_story_designer/assets/fonts/ConcertOne-Regular.ttf
 
-    # - family: YatraOne
-    #   fonts:
-    #     - asset: packages/vs_story_designer/assets/fonts/YatraOne-Regular.ttf
+  # - family: YatraOne
+  #   fonts:
+  #     - asset: packages/vs_story_designer/assets/fonts/YatraOne-Regular.ttf
 
-    # - family: OldStandardTT
-    #   fonts:
-    #     - asset: packages/vs_story_designer/assets/fonts/OldStandardTT-Italic.ttf
+  # - family: OldStandardTT
+  #   fonts:
+  #     - asset: packages/vs_story_designer/assets/fonts/OldStandardTT-Italic.ttf
 
-    # - family: Neonderthaw
-    #   fonts:
-    #     - asset: packages/vs_story_designer/assets/fonts/Neonderthaw-Regular.ttf
+  # - family: Neonderthaw
+  #   fonts:
+  #     - asset: packages/vs_story_designer/assets/fonts/Neonderthaw-Regular.ttf
 
-    # - family: DancingScript
-    #   fonts:
-    #     - asset: packages/vs_story_designer/assets/fonts/DancingScript-VariableFont_wght.ttf
+  # - family: DancingScript
+  #   fonts:
+  #     - asset: packages/vs_story_designer/assets/fonts/DancingScript-VariableFont_wght.ttf
 
-    # - family: SedgwickAve
-    #   fonts:
-    #     - asset: packages/vs_story_designer/assets/fonts/SedgwickAve-Regular.ttf
+  # - family: SedgwickAve
+  #   fonts:
+  #     - asset: packages/vs_story_designer/assets/fonts/SedgwickAve-Regular.ttf
 
-    # - family: IndieFlower
-    #   fonts:
-    #     - asset: packages/vs_story_designer/assets/fonts/IndieFlower-Regular.ttf
+  # - family: IndieFlower
+  #   fonts:
+  #     - asset: packages/vs_story_designer/assets/fonts/IndieFlower-Regular.ttf
 
-    # - family: Sacramento
-    #   fonts:
-    #     - asset: packages/vs_story_designer/assets/fonts/Sacramento-Regular.ttf
+  # - family: Sacramento
+  #   fonts:
+  #     - asset: packages/vs_story_designer/assets/fonts/Sacramento-Regular.ttf
 
-    # - family: PressStart2P
-    #   fonts:
-    #     - asset: packages/vs_story_designer/assets/fonts/PressStart2P-Regular.ttf
+  # - family: PressStart2P
+  #   fonts:
+  #     - asset: packages/vs_story_designer/assets/fonts/PressStart2P-Regular.ttf
 
-    # - family: FrederickatheGreat
-    #   fonts:
-    #     - asset: packages/vs_story_designer/assets/fonts/FrederickatheGreat-Regular.ttf
+  # - family: FrederickatheGreat
+  #   fonts:
+  #     - asset: packages/vs_story_designer/assets/fonts/FrederickatheGreat-Regular.ttf
 
-    # - family: ReenieBeanie
-    #   fonts:
-    #     - asset: packages/vs_story_designer/assets/fonts/ReenieBeanie-Regular.ttf
+  # - family: ReenieBeanie
+  #   fonts:
+  #     - asset: packages/vs_story_designer/assets/fonts/ReenieBeanie-Regular.ttf
 
-    # - family: BungeeShade
-    #   fonts:
-    #     - asset: packages/vs_story_designer/assets/fonts/BungeeShade-Regular.ttf
+  # - family: BungeeShade
+  #   fonts:
+  #     - asset: packages/vs_story_designer/assets/fonts/BungeeShade-Regular.ttf
 
-    # - family: UnifrakturMaguntia
-    #   fonts:
-    #     - asset: packages/vs_story_designer/assets/fonts/UnifrakturMaguntia-Regular.ttf
+  # - family: UnifrakturMaguntia
+  #   fonts:
+  #     - asset: packages/vs_story_designer/assets/fonts/UnifrakturMaguntia-Regular.ttf

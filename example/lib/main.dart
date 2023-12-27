@@ -75,8 +75,7 @@ class _ExampleState extends State<Example> {
                                   //   FontType.typewriter
                                   // ],
                                   // middleBottomWidget: const SizedBox(),
-                                  themeType: ThemeType
-                                      .light, // OPTIONAL, Default ThemeType.dark
+                                  themeType: ThemeType.light, // OPTIONAL, Default ThemeType.dark
                                   galleryThumbnailQuality: 250,
                                   onDone: (uri) {
                                     debugPrint(uri);
@@ -85,12 +84,9 @@ class _ExampleState extends State<Example> {
                                   mediaPath: mediaPath,
                                 )));
                   },
-                  child: const Text('Create',
-                      style:
-                          TextStyle(fontSize: 30, fontWeight: FontWeight.w500)),
+                  child: const Text('Create', style: TextStyle(fontSize: 30, fontWeight: FontWeight.w500)),
                   style: ElevatedButton.styleFrom(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 20, vertical: 10),
+                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       )),
@@ -107,8 +103,7 @@ class _ExampleState extends State<Example> {
     ByteData? byteData;
 
     try {
-      RenderRepaintBoundary? boundary = _globalKey.currentContext
-          ?.findRenderObject() as RenderRepaintBoundary?;
+      RenderRepaintBoundary? boundary = _globalKey.currentContext?.findRenderObject() as RenderRepaintBoundary?;
 
       ui.Image? image = await boundary?.toImage(pixelRatio: 4);
       byteData = await image?.toByteData(format: ui.ImageByteFormat.png);
